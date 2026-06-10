@@ -68,6 +68,7 @@ The default categories are:
 - Include accurate GitHub star counts and license info when available (temporary until stars fetcher workers)
 - Keep descriptions under 140 characters
 - Use 3-5 relevant tags per tool
+- Use the following link to add a tool you [found/made](https://github.com/BraveOPotato/FckSignups/issues/new?template=request-to-add-a-tool.md)
 
 ---
 
