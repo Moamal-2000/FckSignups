@@ -1,6 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
-import type { Tool, Category, LoadStatus } from "../types";
-import { FALLBACK_DATA, EXTERNAL_JSON_URL } from "../constants/fallbackData";
+import type { Tool, Category, LoadStatus, ToolsData } from "../types";
+import {
+  FALLBACK_DATA,
+  DEV_JSON_URL,
+  PROD_JSON_URL,
+} from "../constants/fallbackData";
 
 interface UseToolsReturn {
   tools: Tool[];
@@ -25,27 +29,26 @@ export function useTools(): UseToolsReturn {
   useEffect(() => {
     async function load() {
       setLoadStatus("loading");
-      try {
-        const res = await fetch(EXTERNAL_JSON_URL);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        hydrate(data);
-      } catch (err) {
-        setErrorMessage(err instanceof Error ? err.message : "Unknown error");
-        setLoadStatus("error");
-        // Fallback after short delay so user sees error flash
-        setTimeout(() => {
-          hydrate(FALLBACK_DATA);
-        }, 1200);
-      }
+      // Try loading the local dev JSON for testing.
+      let data = await loadTools(DEV_JSON_URL);
+      // Try loading data from GITHUB.
+      if (!data) data = await loadTools(PROD_JSON_URL);
+      // If all fails, load fallback data
+      if (!data) data = FALLBACK_DATA;
+      hydrate(data);
     }
     load();
   }, []);
 
-  function hydrate(data: typeof FALLBACK_DATA) {
+  function hydrate(data: ToolsData) {
     const cats = data.categories ?? [];
     if (!cats.find((c) => c.id === "all")) {
-      cats.unshift({ id: "all", name: "All", icon: "◈", description: "All tools" });
+      cats.unshift({
+        id: "all",
+        name: "All",
+        icon: "◈",
+        description: "All tools",
+      });
     }
     setAllTools(data.tools ?? []);
     setCategories(cats);
@@ -56,7 +59,8 @@ export function useTools(): UseToolsReturn {
     const q = searchQuery.toLowerCase().trim();
     return allTools
       .filter((t) => {
-        const matchCat = activeCategory === "all" || t.category === activeCategory;
+        const matchCat =
+          activeCategory === "all" || t.category === activeCategory;
         const matchSearch =
           !q ||
           t.name.toLowerCase().includes(q) ||
@@ -82,4 +86,15 @@ export function useTools(): UseToolsReturn {
     setSearchQuery,
     setActiveCategory,
   };
+}
+
+async function loadTools(JSON_URL: string): Promise<ToolsData | null> {
+  try {
+    const res = await fetch(JSON_URL);
+    if (!res.ok) throw new Error(`Failed to get data from ${JSON_URL}`);
+    return (await res.json()) as ToolsData;
+  } catch (err) {
+    console.error(`Couldn't parse tools from: ${JSON_URL}`, err);
+    return null;
+  }
 }
