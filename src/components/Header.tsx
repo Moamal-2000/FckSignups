@@ -9,14 +9,17 @@ export function Header({ toolCount, categoryCount }: HeaderProps) {
       <div className="header-grid">
         <div className="brand-block">
           <h1>
-            <span className="fck glitch" data-text="FCK">FCK</span>
+            <span className="fck glitch" data-text="F*CK">
+              F*CK
+            </span>
             <span className="signups">Signups</span>
           </h1>
           <div className="tagline-block">
             <p className="tagline-main">Open Source Tools. Zero Bullsh*t.</p>
             <p className="tagline-sub">
               A curated collection of open-source tools you can use instantly in
-              your browser — no accounts, no emails, no tracking. Just tools that work.
+              your browser — no accounts, no emails, no tracking. Just tools
+              that work.
             </p>
           </div>
         </div>
