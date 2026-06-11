@@ -25,6 +25,9 @@ export function Header({ toolCount, categoryCount }: HeaderProps) {
         </div>
 
         <div className="header-stats">
+          <a href="https://github.com/BraveOPotato/FckSignups/issues/new?template=request-to-add-a-tool.md">
+            <button className="submit-tool-button">SUBMIT A TOOL</button>
+          </a>
           <div className="stat-row">
             <span className="stat-dot" />
             LIVE INDEX

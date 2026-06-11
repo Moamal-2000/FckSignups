@@ -186,6 +186,24 @@ h1 .fck::after {
     color: var(--text-muted);
 }
 
+.submit-tool-button {
+    font-size: 0.8rem;
+    color: white;
+    background-color: var(--accent);
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 0px rgba(255, 0, 64, 0.3);
+    transition-duration: 0.3s;
+}
+
+.submit-tool-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #838383;
+}
+
 .stat-row {
     display: flex;
     align-items: center;
