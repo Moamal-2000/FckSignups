@@ -451,7 +451,7 @@
       "name": "dDoc",
       "description": "A privacy-first, end-to-end encrypted alternative to Google Docs for rich document editing.",
       "url": "https://ddocs.new/",
-      "category": "Writing & Docs",
+      "category": "writing",
       "tags": ["documents", "notes"],
       "github": "https://github.com/fileverse/fileverse-ddoc",
       "license": "AGPL-3.0",
