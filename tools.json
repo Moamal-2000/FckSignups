@@ -469,6 +469,54 @@
       "license": "AGPL-3.0",
       "stars": 65,
       "featured": false
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io",
+      "description": "A configurable browser-based diagramming and whiteboarding tool for flowcharts, UML, network diagrams, ER diagrams, BPMN, and more.",
+      "url": "https://www.drawio.com/",
+      "category": "design",
+      "tags": ["diagrams", "editor"],
+      "github": "https://github.com/jgraph/drawio",
+      "license": "Apache-2.0",
+      "stars": 6000,
+      "featured": false
+    },
+    {
+      "id": "mr-data-converter",
+      "name": "Mr. Data Converter",
+      "description": "Takes CSV or tab-delimited data from Excel and converts it into several web-friendly formats, include JSON and XML.",
+      "url": "https://shancarter.github.io/mr-data-converter/",
+      "category": "data",
+      "tags": ["data-conversion", "excel", "csv"],
+      "github": "https://github.com/shancarter/Mr-Data-Converter?tab=License-1-ov-file",
+      "license": "MIT",
+      "stars": 2000,
+      "featured": false
+    },
+    {
+      "id": "cyberchef",
+      "name": "CyberChef",
+      "description": "A browser-based “cyber” workbench for encoding, decoding, encryption, compression, hashing, parsing, and data analysis recipes.",
+      "url": "https://gchq.github.io/CyberChef/",
+      "category": "privacy",
+      "tags": ["encode", "decode", "hash", "data-analytics"],
+      "github": "https://github.com/gchq/CyberChef",
+      "license": "Apache-2.0",
+      "stars": 35100,
+      "featured": false
+    },
+    {
+      "id": "brouter-web",
+      "name": "BRouter-web",
+      "description": "A web client for the BRouter routing engine, providing OpenStreetMap-based route planning with profile customization and route export.",
+      "url": "https://brouter.de/brouter-web/",
+      "category": "utilities",
+      "tags": ["maps", "routing", "openstreetmap", "navigation"],
+      "github": "https://github.com/nrenner/brouter-web",
+      "license": "MIT",
+      "stars": 486,
+      "featured": false
     }
   ]
 }
