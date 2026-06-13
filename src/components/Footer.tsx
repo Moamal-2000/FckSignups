@@ -1,55 +1,63 @@
+import { useState } from "react";
+import { SubmitToolModal } from "./SubmitToolModal";
+
 export function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
-    <footer>
-      <div className="footer-grid">
-        <div className="footer-col">
-          <h4>About</h4>
-          <p>
-            FckSignups is a curated directory of tools that respect your time.
-            No signups, no spam, no dark patterns.
-          </p>
+    <>
+      <footer>
+        <div className="footer-grid">
+          <div className="footer-col">
+            <h4>About</h4>
+            <p>
+              FckSignups is a curated directory of tools that respect your time.
+              No signups, no spam, no dark patterns.
+            </p>
+          </div>
+          <div className="footer-col">
+            <h4>Contribute</h4>
+            <p>
+              <button
+                className="footer-link-btn"
+                onClick={() => setModalOpen(true)}
+              >
+                Submit a tool
+              </button>
+            </p>
+            <p>
+              <a
+                href="https://github.com/BraveOPotato/FckSignups/issues/new"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Report an issue
+              </a>
+            </p>
+          </div>
+          <div className="footer-col">
+            <h4>Legal</h4>
+            <p>
+              All tools are independently verified. We don&apos;t track you. We
+              don&apos;t sell data. We don&apos;t care about your email.
+            </p>
+          </div>
         </div>
-        <div className="footer-col">
-          <h4>Contribute</h4>
+        <div className="footer-bottom">
           <p>
+            © 2026 FCKSIGNUPS /// CURATED WITH SPITE ///{" "}
             <a
-              href="https://github.com/BraveOPotato/FckSignups/issues/new?template=request-to-add-a-tool.md"
+              href="https://github.com/BraveOPotato/FckSignups"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Submit a tool on GitHub
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://github.com/BraveOPotato/FckSignups/issues/new"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Report an issue
+              GITHUB
             </a>
           </p>
         </div>
-        <div className="footer-col">
-          <h4>Legal</h4>
-          <p>
-            All tools are independently verified. We don&apos;t track you. We
-            don&apos;t sell data. We don&apos;t care about your email.
-          </p>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>
-          © 2026 FCKSIGNUPS /// CURATED WITH SPITE ///{" "}
-          <a
-            href="https://github.com/BraveOPotato/FckSignups"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GITHUB
-          </a>
-        </p>
-      </div>
-    </footer>
+      </footer>
+
+      <SubmitToolModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+    </>
   );
 }
