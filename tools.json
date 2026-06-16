@@ -991,6 +991,66 @@
       "license": "?",
       "stars": 0,
       "featured": false
+    },
+    {
+      "id": "image-scrubber",
+      "name": "image-scrubber",
+      "description": "A tool for anonymizing photographs taken at protests",
+      "url": "https://everestpipkin.github.io/image-scrubber/",
+      "category": "privacy",
+      "tags": ["image", "picture", "edit"],
+      "github": "https://github.com/everestpipkin/image-scrubber",
+      "license": "MIT",
+      "stars": 1000,
+      "featured": false
+    },
+    {
+      "id": "satvisor",
+      "name": "Satvisor",
+      "description": "3D satellite tracker with orbit visualization, pass predictions, and antenna rotator control (GS-232, EasyComm, Hamlib)",
+      "url": "https://satvisor.com/",
+      "category": "data",
+      "tags": ["satellite", "space", "visualize"],
+      "github": "https://github.com/satvisorcom/satvisor",
+      "license": "AGPL-3.0",
+      "stars": 6,
+      "featured": false
+    },
+    {
+      "id": "image-to-unicodeascii-generator",
+      "name": "Image to UnicodeASCII Generator",
+      "description": "Easily transform any image into ASCII/Unicode art",
+      "url": "https://reactorcore.itch.io/image-to-unicodeascii-generator",
+      "category": "design",
+      "tags": ["ascii", "image", "picture"],
+      "github": "https://github.com/ReactorcoreGames/Image-to-UnicodeASCII-Generator/tree/main",
+      "license": "?",
+      "stars": 0,
+      "featured": false
+    },
+    {
+      "id": "xipe",
+      "name": "xipe",
+      "description": "URL shortener and pastebin service",
+      "url": "https://xi.pe/",
+      "category": "utilities",
+      "tags": ["paste-bin", "paste", "text", "share"],
+      "github": "https://github.com/drewstreib/xipe-go",
+      "license": "MIT",
+      "stars": 1,
+      "featured": false
+    },
+    {
+      "id": "delphitools",
+      "name": "delphitools",
+      "description": "A collection of small, low stakes and low effort tools",
+      "url": "https://delphi.tools/",
+      "category": "development",
+      "tags": ["image", "qr", "picture", "list"],
+      "github": "https://github.com/1612elphi/delphitools",
+      "license": "MIT",
+      "stars": 551,
+      "featured": false
     }
   ]
 }
