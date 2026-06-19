@@ -1,4 +1,3 @@
-import { useCallback, useRef } from "react";
 import type { Category, Tool } from "../types";
 
 interface ControlsProps {

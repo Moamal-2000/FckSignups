@@ -56,13 +56,13 @@ The default categories are:
 |----|------|------|
 | `all` | All | ◈ |
 | `productivity` | Productivity | ⚡ |
-| `design` | Design & Graphics | ▣ |
-| `development` | Development | ◆ |
-| `writing` | Writing & Docs | ✎ |
-| `privacy` | Privacy | ◊ |
-| `utilities` | Utilities | ◉ |
-| `data` | Data & Analytics | ◐ |
-| `media` | Media | ◫ |
+| `design` | Design & Graphics | 🎨 |
+| `development` | Development | 💻 |
+| `writing` | Writing & Docs | ✍️ |
+| `privacy` | Privacy | 🔒 |
+| `utilities` | Utilities | 🛠️ |
+| `data` | Data & Analytics | 📊 |
+| `media` | Media | 🎬 |
 
 
 ---
@@ -71,10 +71,9 @@ The default categories are:
 
 ### Contribution guidelines
 - The tool must work **without creating an account**
-- Include accurate GitHub star counts and license info when available (temporary until stars fetcher workers)
 - Keep descriptions under 140 characters
 - Use 3-5 relevant tags per tool
-- Use the following link to add a tool you [found/made](https://github.com/BraveOPotato/FckSignups/issues/new?template=request-to-add-a-tool.md)
+- Use the following link to add a tool you [found/made](https://github.com/BraveOPotato/FckSignups/issues/new?template=request-to-add-a-tool.md) or simply use the "SUBMIT A TOOL" button on the website.
 
 ---
 
