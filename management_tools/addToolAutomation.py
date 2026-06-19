@@ -1,8 +1,12 @@
-from addTool import getArrayInput, getInput, loadJSONFile, slugify, updateJSONFile
+from addTool import (
+    JSON_PATH,
+    getArrayInput,
+    getInput,
+    loadJSONFile,
+    slugify,
+    updateJSONFile,
+)
 from githubBridge import GitHubIssueBridge, GitHubRepoBridge
-
-# GLOBAL CONSTANTS
-JSON_PATH = "../tools.json"
 
 
 def validate(fields):
@@ -46,7 +50,7 @@ def printAllCategories(json_file_data):
 
 
 def main():
-    userInput = input("Issue URL:")
+    userInput = getInput("Issue URL:")
     issueBridge = GitHubIssueBridge(userInput)
     fields = issueBridge.getAutomationString().split(";;")
 

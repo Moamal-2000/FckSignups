@@ -93,7 +93,7 @@ def main():
 
         # print category ids
         for category in json_file_data["categories"]:
-            print(category["id"], end=', ')
+            print(category["id"], end=", ")
         print()
 
         new_tool_json = getToolInput()
