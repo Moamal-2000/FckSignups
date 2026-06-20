@@ -1291,6 +1291,78 @@
       "license": "MIT",
       "stars": 7,
       "featured": false
+    },
+    {
+      "id": "wavacity",
+      "name": "Wavacity",
+      "description": "Easy-to-use, multi-track audio editor and recorder",
+      "url": "https://wavacity.com/",
+      "category": "media",
+      "tags": ["audio", "editor", "recorder"],
+      "github": "https://github.com/ahilss/wavacity",
+      "license": "GPL-2.0",
+      "stars": 476,
+      "featured": false
+    },
+    {
+      "id": "clearcanvas-ai",
+      "name": "ClearCanvas AI",
+      "description": "Generate images, compress photos, upscale pictures, and remove backgrounds",
+      "url": "https://clearcanvasai.vercel.app/",
+      "category": "media",
+      "tags": ["ai", "bg-remover", "compression", "upscale", "generator"],
+      "github": "https://github.com/rakibulsagor/Clearcanvas",
+      "license": "MIT",
+      "stars": 0,
+      "featured": false
+    },
+    {
+      "id": "verisim",
+      "name": "VeriSim",
+      "description": "Verilog simulator built by compiling Icarus Verilog to WebAssembly. No server, no install: edit, compile, simulate, view waveforms, and synthesize to a gate-level or RTL schematic",
+      "url": "https://senolgulgonul.github.io/verisim/",
+      "category": "development",
+      "tags": ["simulate", "verilog", "schematic"],
+      "github": "https://github.com/senolgulgonul/verisim",
+      "license": "GPL-2.0",
+      "stars": 14,
+      "featured": false
+    },
+    {
+      "id": "sqlchef",
+      "name": "SQLChef",
+      "description": "Query files like CSV, JSON, and Parquet directly in the browser",
+      "url": "https://jonathanwalker.github.io/SQLChef/",
+      "category": "data",
+      "tags": ["query", "sql", "csv", "json"],
+      "github": "https://github.com/jonathanwalker/sqlchef",
+      "license": "MIT",
+      "stars": 14,
+      "featured": false
+    },
+    {
+      "id": "bentopdf",
+      "name": "BentoPDF",
+      "description": "Powerful, privacy-first, client-side PDF toolkit that is self hostable and allows you to manipulate, edit, merge, and process PDF files",
+      "url": "https://www.bentopdf.com/",
+      "category": "productivity",
+      "tags": ["pdf", "merge", "edit", "list"],
+      "github": "https://github.com/alam00000/bentopdf/",
+      "license": "AGPL-3.0",
+      "stars": 13772,
+      "featured": false
+    },
+    {
+      "id": "shadestudio",
+      "name": "ShadeStudio",
+      "description": "Create a full color palette from a base color and export it to CSS, Tailwind and SVG",
+      "url": "https://laura.media/shade-studio/",
+      "category": "design",
+      "tags": ["color", "pallete"],
+      "github": "https://github.com/LauraWebdev/shade-studio",
+      "license": "MIT",
+      "stars": 0,
+      "featured": false
     }
   ]
 }
