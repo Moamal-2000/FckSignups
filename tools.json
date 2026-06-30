@@ -1926,6 +1926,95 @@
       "license": "MIT",
       "stars": 36038,
       "featured": false
+    },
+    {
+      "id": "makegirlsmoe",
+      "name": "MakeGirlsMoe",
+      "description": "Create Anime Characters",
+      "url": "https://make.girls.moe",
+      "category": "design",
+      "tags": [
+        "anime-girls",
+        "profile-picture-generator",
+        "pfp-generator",
+        "ai"
+      ],
+      "github": "https://github.com/makegirlsmoe/makegirlsmoe_web",
+      "license": "CC BY-NC 2.0",
+      "stars": 3408,
+      "featured": false
+    },
+    {
+      "id": "asciiflow",
+      "name": "ASCIIFlow",
+      "description": "An application for drawing ASCII diagrams",
+      "url": "https://asciiflow.com/",
+      "category": "productivity",
+      "tags": ["ascii", "draw", "diagram"],
+      "github": "https://github.com/lewish/asciiflow",
+      "license": "MIT",
+      "stars": 5771,
+      "featured": false
+    },
+    {
+      "id": "affine",
+      "name": "AFFiNE",
+      "description": "Next-gen knowledge base that brings planning, sorting and creating all together",
+      "url": "https://affine.pro/",
+      "category": "writing",
+      "tags": ["knowledge-management", "notion-like"],
+      "github": "https://github.com/toeverything/AFFiNE",
+      "license": "MIT",
+      "stars": 69911,
+      "featured": false
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "description": "A privacy-first, open-source platform for knowledge management and collaboration",
+      "url": "https://logseq.com/",
+      "category": "writing",
+      "tags": ["knowledge-management", "knowledge-platform"],
+      "github": "https://github.com/logseq/logseq",
+      "license": "AGPL-3.0",
+      "stars": 43604,
+      "featured": false
+    },
+    {
+      "id": "svgomg",
+      "name": "SVGOMG",
+      "description": "Shrink SVG sizes dramatically",
+      "url": "https://jakearchibald.github.io/svgomg/",
+      "category": "development",
+      "tags": ["svg-optimizer", "svg-compression"],
+      "github": "https://github.com/jakearchibald/svgomg",
+      "license": "MIT",
+      "stars": 6186,
+      "featured": false
+    },
+    {
+      "id": "glyphr-studio",
+      "name": "Glyphr Studio",
+      "description": "Font editor, made for hobbyists and typeface design beginners",
+      "url": "https://www.glyphrstudio.com/",
+      "category": "design",
+      "tags": ["font-editor", "font-designer"],
+      "github": "https://github.com/glyphr-studio/Glyphr-Studio-2",
+      "license": "?",
+      "stars": 296,
+      "featured": false
+    },
+    {
+      "id": "codegraphcontext-cgc",
+      "name": "CodeGraphContext (CGC)",
+      "description": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI assistants",
+      "url": "https://cgc.codes/explore",
+      "category": "development",
+      "tags": ["ai-tool", "llm-tool", "codebase-mapper"],
+      "github": "https://github.com/CodeGraphContext/CodeGraphContext",
+      "license": "MIT",
+      "stars": 3840,
+      "featured": false
     }
   ]
 }
