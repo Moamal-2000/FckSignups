@@ -2087,6 +2087,78 @@
       "license": "AGPL-3.0",
       "stars": 2,
       "featured": false
+    },
+    {
+      "id": "cryptgeon",
+      "name": "Cryptgeon",
+      "description": "Send fully encrypted secure notes or files with custom expiration",
+      "url": "https://cryptgeon.com/",
+      "category": "privacy",
+      "tags": ["notes", "file-transfer", "share", "send"],
+      "github": "https://github.com/cupcakearmy/cryptgeon",
+      "license": "MIT",
+      "stars": 1466,
+      "featured": false
+    },
+    {
+      "id": "mermify",
+      "name": "Mermify",
+      "description": "Bi-directional visual editor for Mermaid.js flowcharts",
+      "url": "https://tra-sco.github.io/mermify/",
+      "category": "productivity",
+      "tags": ["mermaid", "graph", "flowchart", "editor"],
+      "github": "https://github.com/tra-sco/mermify",
+      "license": "MIT",
+      "stars": 5,
+      "featured": false
+    },
+    {
+      "id": "drawshare",
+      "name": "DrawShare",
+      "description": "collaborative whiteboard for drawing and note-taking",
+      "url": "https://shravangoswami.com/DrawShare/",
+      "category": "design",
+      "tags": ["drawing", "whiteboard", "collaboration"],
+      "github": "https://github.com/shravanngoswamii/DrawShare",
+      "license": "MIT",
+      "stars": 3,
+      "featured": false
+    },
+    {
+      "id": "editorpilot",
+      "name": "EditorPilot",
+      "description": "AI writing assistant that lives entirely in your browser",
+      "url": "https://editorpilot.com/",
+      "category": "writing",
+      "tags": ["ai", "grammar", "editor"],
+      "github": "https://github.com/tuton012/editorpilot",
+      "license": "",
+      "stars": 1,
+      "featured": false
+    },
+    {
+      "id": "full-stack-open",
+      "name": "Full Stack open",
+      "description": "Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go",
+      "url": "https://fullstackopen.com/en/",
+      "category": "education",
+      "tags": ["development-course", "full-stack-course"],
+      "github": "https://github.com/fullstack-hy2020/fullstack-hy2020.github.io",
+      "license": "NOASSERTION",
+      "stars": 2179,
+      "featured": false
+    },
+    {
+      "id": "tailit",
+      "name": "Tailit",
+      "description": "An interactive resume builder with templates. Paste a job link and AI rewrites your resume to match",
+      "url": "https://tailit.xyz/",
+      "category": "productivity",
+      "tags": ["resume-builder", "cv-builder"],
+      "github": "https://github.com/sardorml/tailit",
+      "license": "MIT",
+      "stars": 13,
+      "featured": false
     }
   ]
 }
