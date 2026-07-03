@@ -36,7 +36,7 @@ export function ToolGrid({
   }
 
   return (
-    <main className="grid">
+    <main className="grid border-glow">
       {loadStatus == "error" && (
         <div className="error">
           <h3>ERR_LOAD_FAILED</h3>

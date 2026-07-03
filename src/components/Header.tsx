@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SubmitToolModal } from "./SubmitToolModal";
+import { useModal } from "../hooks/useModal";
 
 interface HeaderProps {
   toolCount: number;
@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 export function Header({ toolCount, categoryCount }: HeaderProps) {
-  const [modalOpen, setModalOpen] = useState(false);
+  const { showModalWithID } = useModal();
   const [starsCount, setStarsCount] = useState(0);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export function Header({ toolCount, categoryCount }: HeaderProps) {
           <div className="header-stats">
             <button
               className="submit-tool-button"
-              onClick={() => setModalOpen(true)}
+              onClick={() => showModalWithID("submit-tool")}
             >
               SUBMIT A TOOL
             </button>
@@ -69,8 +69,6 @@ export function Header({ toolCount, categoryCount }: HeaderProps) {
           </div>
         </div>
       </header>
-
-      <SubmitToolModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   );
 }

@@ -3,6 +3,10 @@ import { Controls } from "./components/Controls";
 import { ToolGrid } from "./components/ToolGrid";
 import { Footer } from "./components/Footer";
 import { useTools } from "./hooks/useTools";
+import { Report } from "./components/Report";
+import { ReportProvider } from "./hooks/useReport";
+import { ModalProvider } from "./hooks/useModal";
+import { MODAL_CONFIGS } from "./constants/ModalConfigs";
 
 export default function App() {
   const {
@@ -25,32 +29,36 @@ export default function App() {
 
   return (
     <>
-      <Header
-        toolCount={tools.length}
-        categoryCount={Math.max(0, categories.length - 1)}
-      />
+      <ModalProvider modalConfigs={MODAL_CONFIGS}>
+        <Header
+          toolCount={tools.length}
+          categoryCount={Math.max(0, categories.length - 1)}
+        />
 
-      <Controls
-        categories={categories}
-        activeCategory={activeCategory}
-        searchQuery={searchQuery}
-        allTools={tools}
-        filteredCount={filteredTools.length}
-        onCategoryChange={setActiveCategory}
-        onSearchChange={setSearchQuery}
-      />
+        <Controls
+          categories={categories}
+          activeCategory={activeCategory}
+          searchQuery={searchQuery}
+          allTools={tools}
+          filteredCount={filteredTools.length}
+          onCategoryChange={setActiveCategory}
+          onSearchChange={setSearchQuery}
+        />
+        <div className="section-divider">{sectionLabel}</div>
 
-      <div className="section-divider">{sectionLabel}</div>
+        <ReportProvider>
+          <ToolGrid
+            tools={filteredTools}
+            categories={categories}
+            loadStatus={loadStatus}
+            errorMessage={errorMessage}
+            setSearchQuery={setSearchQuery}
+          />
 
-      <ToolGrid
-        tools={filteredTools}
-        categories={categories}
-        loadStatus={loadStatus}
-        errorMessage={errorMessage}
-        setSearchQuery={setSearchQuery}
-      />
-
-      <Footer />
+          <Report />
+        </ReportProvider>
+        <Footer />
+      </ModalProvider>
     </>
   );
 }

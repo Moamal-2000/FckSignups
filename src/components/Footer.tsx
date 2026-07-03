@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { SubmitToolModal } from "./SubmitToolModal";
+import { useModal } from "../hooks/useModal";
 
 export function Footer() {
-  const [modalOpen, setModalOpen] = useState(false);
-
+  const { showModalWithID } = useModal();
   return (
     <>
       <footer>
@@ -20,7 +18,7 @@ export function Footer() {
             <p>
               <button
                 className="footer-link-btn"
-                onClick={() => setModalOpen(true)}
+                onClick={() => showModalWithID("submit-tool")}
               >
                 Submit a tool
               </button>
@@ -56,8 +54,6 @@ export function Footer() {
           </p>
         </div>
       </footer>
-
-      <SubmitToolModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   );
 }

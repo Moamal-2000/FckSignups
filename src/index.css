@@ -80,6 +80,34 @@ body::after {
     );
 }
 
+.toast-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    z-index: 100;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    background-color: var(--surface);
+    border: 2px solid var(--accent);
+    box-shadow: var(--accent) 0px 0px 52px;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+
+.toast-container svg {
+    color: var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.toast-container svg:hover {
+    color: var(--text);
+}
+
 /* ===== HEADER ===== */
 .site-header {
     position: relative;
@@ -197,7 +225,8 @@ h1 .fck::after {
     transition-duration: 0.3s;
 }
 
-.submit-tool-button:hover {
+.submit-tool-button:hover,
+.submit-tool-button[data-sticky="true"] {
     background-color: white;
     color: black;
     cursor: pointer;
@@ -456,6 +485,26 @@ input[type="text"]::placeholder {
 }
 .card:hover .card-index {
     color: var(--accent);
+}
+
+.card[data-highlighted="true"] {
+    cursor: pointer;
+    box-shadow: var(--accent) 2px 2px 2px;
+    animation: 1s linear shakeAnimation infinite alternate;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        margin: 1px 1px;
+    }
+
+    50% {
+        margin: 0px 0px;
+    }
+
+    50% {
+        margin: -1px -1px;
+    }
 }
 
 .card-index {
@@ -871,7 +920,7 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
 }
 
 .modal-title {
@@ -885,6 +934,11 @@ footer {
 
 .modal-title-accent {
     color: var(--accent);
+}
+
+.modal-title-accent::before {
+    content: "SUBMIT_";
+    color: var(--text);
 }
 
 .modal-close {
@@ -937,6 +991,13 @@ footer {
     letter-spacing: 0.1em;
     color: var(--text-dim);
     text-transform: uppercase;
+}
+
+/* God bless AI for this selector */
+label:has(+ .modal-input[required])::after {
+    content: "*";
+    margin-left: 5px;
+    color: var(--accent);
 }
 
 .modal-required {
@@ -1097,4 +1158,55 @@ footer {
 }
 .modal-panel::-webkit-scrollbar-thumb {
     background: var(--border-light);
+}
+
+.report-button {
+    position: fixed;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+    bottom: 10%;
+    right: 15%;
+    background-color: var(--accent);
+    animation-name: idle-float;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    anchor-name: --report-button-anchor;
+}
+
+.report-button svg {
+    vertical-align: center;
+}
+
+.report-button:hover svg,
+.report-button[data-sticky="true"] svg {
+    stroke: black;
+}
+
+@keyframes idle-float {
+    0% {
+        bottom: 11%;
+        right: 15%;
+    }
+    100% {
+        bottom: 10%;
+        right: 15%;
+    }
+}
+
+.report-menu {
+    position-anchor: --report-button-anchor;
+    position: fixed;
+    border-radius: 1rem;
+    right: calc(anchor(left) + 1rem);
+    bottom: anchor(bottom);
+}
+
+.report-menu-item {
+    list-style-type: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: var(--accent);
 }
