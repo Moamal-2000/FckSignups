@@ -2537,6 +2537,78 @@
       "license": "MIT",
       "stars": 1523,
       "featured": false
+    },
+    {
+      "id": "enumbers-lookup",
+      "name": "enumbers lookup",
+      "description": "A modern web application for looking up E-number food additives with comprehensive data from Open Food Facts",
+      "url": "https://enumbers.jarvisdiscordbot.net/",
+      "category": "utilities",
+      "tags": ["food-additives", "lookup"],
+      "github": "https://github.com/JARVIS-discordbot/e-numbers",
+      "license": "CC-BY-SA-3.0",
+      "stars": 0,
+      "featured": false
+    },
+    {
+      "id": "ul0",
+      "name": "Ul0",
+      "description": "Free URL shortener that lets you create branded short links with custom domains, QR codes, click analytics, and an easy-to-use dashboard",
+      "url": "https://ul0.site",
+      "category": "utilities",
+      "tags": ["url-shortener"],
+      "github": "https://github.com/Saketkesar/ul0",
+      "license": "?",
+      "stars": 1,
+      "featured": false
+    },
+    {
+      "id": "owncardly",
+      "name": "OwnCardly",
+      "description": "Digital business cards you actually own",
+      "url": "https://owncardly.com/",
+      "category": "utilities",
+      "tags": ["business-card-maker"],
+      "github": "https://github.com/kevinwielander/digital-business-cards",
+      "license": "MIT",
+      "stars": 15,
+      "featured": false
+    },
+    {
+      "id": "codemap-ai",
+      "name": "CodeMap AI",
+      "description": "helps developers, especially beginners in open source, understand large repositories faster without getting lost trying to figure out where to start",
+      "url": "https://code-map-ai-mu.vercel.app/",
+      "category": "development",
+      "tags": ["code-base-mapper", "repo-mapper", "github-repo-mapper"],
+      "github": "https://github.com/Ayansh0209/CodeMap-Ai",
+      "license": "MIT",
+      "stars": 10,
+      "featured": false
+    },
+    {
+      "id": "markmap",
+      "name": "Markmap",
+      "description": "Creates interactive mind maps from Markdown with a live editor and visualization",
+      "url": "https://markmap.js.org/",
+      "category": "development",
+      "tags": ["markdown", "mind-map", "visualization"],
+      "github": "https://github.com/markmap/markmap",
+      "license": "MIT",
+      "stars": 12900,
+      "featured": false
+    },
+    {
+      "id": "kroki",
+      "name": "Kroki",
+      "description": "diagram rendering service that generates diagrams from text using tools like Mermaid, PlantUML, Graphviz, and more",
+      "url": "https://kroki.io/#try",
+      "category": "development",
+      "tags": ["diagram", "mermaid", "plantuml", "uml", "visualization"],
+      "github": "https://github.com/yuzutech/kroki",
+      "license": "MIT",
+      "stars": 4200,
+      "featured": false
     }
   ]
 }
