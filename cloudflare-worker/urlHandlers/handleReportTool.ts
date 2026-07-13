@@ -5,7 +5,11 @@ interface ToolReport {
   report: string;
 }
 
-export async function handleReportTool(request: Request, env: Env) {
+export async function handleReportTool(
+  request: Request,
+  env: Env,
+  origin: string,
+) {
   let sub: ToolReport;
   try {
     sub = validate(await request.json());

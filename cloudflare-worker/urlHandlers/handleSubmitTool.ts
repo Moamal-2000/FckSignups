@@ -9,7 +9,11 @@ interface ToolSubmission {
   category: string;
 }
 
-export async function handleSubmitTool(request: Request, env: Env) {
+export async function handleSubmitTool(
+  request: Request,
+  env: Env,
+  origin: string,
+) {
   let sub: ToolSubmission;
   try {
     sub = validate(await request.json());

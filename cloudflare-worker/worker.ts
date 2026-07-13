@@ -33,11 +33,11 @@ export default {
 
     switch (url.pathname) {
       case "/submit-tool":
-        return await handleSubmitTool(request, env);
+        return await handleSubmitTool(request, env, origin);
       case "/report-tool":
-        return await handleReportTool(request, env);
+        return await handleReportTool(request, env, origin);
       case "/suggest-tool":
-        return await handleSuggestTool(request, env);
+        return await handleSuggestTool(request, env, origin);
       default:
         return jsonResponse({ error: "Unknwon URL" }, 404, origin);
     }

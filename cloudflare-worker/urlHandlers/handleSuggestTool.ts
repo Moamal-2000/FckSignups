@@ -4,7 +4,11 @@ interface ToolSuggestion {
   toolIdea: string;
 }
 
-export async function handleSuggestTool(request: Request, env: Env) {
+export async function handleSuggestTool(
+  request: Request,
+  env: Env,
+  origin: string,
+) {
   let sub: ToolSuggestion;
   try {
     sub = validate(await request.json());
