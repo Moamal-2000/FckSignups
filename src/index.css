@@ -12,8 +12,8 @@
     --border-light: #333;
     --text: #f0f0f0;
     --text-dim: #dfdfdf;
-    --text-muted: #656565;
-    --accent: #ff0040;
+    --text-muted: #a9a9a9;
+    --accent: #E2023A;
     --accent-2: #00ff88;
     --accent-3: #ffaa00;
     --accent-4: #00ccff;
@@ -413,7 +413,6 @@ input[type="text"]::placeholder {
 
 .cat-btn .count {
     font-size: 0.7rem;
-    opacity: 0.6;
     margin-left: 0.3rem;
 }
 
@@ -845,10 +844,14 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid var(--border);
 }
-
 .footer-bottom a {
-    color: var(--accent);
+    color: #ff4d4d;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ff6666; 
 }
 
 /* ===== SCROLLBAR ===== */
