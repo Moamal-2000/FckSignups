@@ -1865,10 +1865,10 @@
     {
       "id": "scratch-tabs",
       "name": "Scratch Tabs",
-      "description": "local-first developer workspace for exploring, transforming, and validating text/data formats",
+      "description": "A huge, searchable collection of 200+ local-first developer tools for everyday text, data, and format tasks.",
       "url": "https://app.scratchtabs.com/",
       "category": "development",
-      "tags": ["dev-toolkit", "tools-list"],
+      "tags": ["developer-tools", "json", "data-converter", "formatting", "transformation"],
       "github": "https://github.com/spectra-g/scratch-tabs",
       "license": "MIT",
       "stars": 3,
