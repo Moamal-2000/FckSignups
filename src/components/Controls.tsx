@@ -44,20 +44,28 @@ export function Controls({
           role="group"
           aria-label="Filter by category"
         >
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`cat-btn${cat.id === activeCategory ? " active" : ""}`}
-              data-id={cat.id}
-              title={cat.description}
-              onClick={() => onCategoryChange(cat.id)}
-            >
-              {cat.icon} {cat.name}
-              <span className="count">
-                {String(counts[cat.id] ?? 0).padStart(2, "0")}
-              </span>
-            </button>
-          ))}
+          {categories.map((cat) => {
+            const isCurrent = cat.id === activeCategory;
+            const countNum = counts[cat.id] ?? 0;
+
+            return (
+              <button
+                key={cat.id}
+                className={`cat-btn${cat.id === activeCategory ? " active" : ""}`}
+                data-id={cat.id}
+                title={cat.description}
+                aria-pressed={isCurrent}
+                aria-label={`${cat.name}, ${countNum} tools`}
+                onClick={() => onCategoryChange(cat.id)}
+              >
+                <span aria-hidden="true">{cat.icon}</span>
+                {cat.name}
+                <span className="count" aria-hidden="true">
+                  {String(counts[cat.id] ?? 0).padStart(2, "0")}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         <div className="results-count" aria-live="polite">
