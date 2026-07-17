@@ -29,11 +29,17 @@ function ReportButton({
   clicked: boolean;
   setClicked: (clickedStatus: boolean) => void;
 }) {
+  const label = "Report or suggest a tool";
+
   return (
     <>
       <button
         onClick={() => setClicked(!clicked)}
         className="submit-tool-button report-button"
+        aria-label={label}
+        title={label}
+        aria-haspopup="menu"
+        aria-expanded={clicked}
         data-sticky={clicked}
       >
         <ChatIcon />
