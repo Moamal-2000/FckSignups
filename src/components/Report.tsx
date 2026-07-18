@@ -16,8 +16,10 @@ export function Report() {
         />
       )}
 
-      <ReportButton clicked={clicked} setClicked={setClicked} />
-      {clicked && <ReportMenu />}
+      <div className="report-wrapper">
+        <ReportButton clicked={clicked} setClicked={setClicked} />
+        {clicked && <ReportMenu />}
+      </div>
     </>
   );
 }

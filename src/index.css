@@ -1267,20 +1267,17 @@ label:has(+ .modal-input[required])::after {
     background: var(--border-light);
 }
 
-.report-button {
+.report-wrapper {
     position: fixed;
-    border-radius: 1rem;
-    padding: 0.5rem 0.5rem;
     bottom: 10%;
     right: 15%;
-    background-color: var(--accent);
-    animation-name: idle-float;
-    animation-duration: 3s;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: idle-float 3s linear infinite alternate;
+}
 
-    anchor-name: --report-button-anchor;
+.report-button {
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--accent);
 }
 
 .report-button svg {
@@ -1294,22 +1291,19 @@ label:has(+ .modal-input[required])::after {
 
 @keyframes idle-float {
     0% {
-        bottom: 11%;
-        right: 15%;
+        translate: 0 0;
     }
 
     100% {
-        bottom: 10%;
-        right: 15%;
+        translate: 10% 15%;
     }
 }
 
 .report-menu {
-    position-anchor: --report-button-anchor;
-    position: fixed;
+    position: absolute;
+    left: -10rem;
+    top: -4.2rem;
     border-radius: 1rem;
-    right: calc(anchor(left) + 1rem);
-    bottom: anchor(bottom);
     list-style-type: none;
 }
 
