@@ -137,7 +137,8 @@ export function ToolCard({ tool, category, setSearchQuery }: ToolCardProps) {
               onClick={(e) => e.stopPropagation()}
               rel="noopener noreferrer"
               className="gh-link"
-              title="View source on GitHub"
+              title={`View ${tool.name} repository on GitHub`}
+              aria-label={`View ${tool.name} repository on GitHub`}
             >
               <GitHubIcon />
               {tool.license ?? "SRC"}

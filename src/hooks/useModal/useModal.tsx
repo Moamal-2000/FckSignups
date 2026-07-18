@@ -74,7 +74,7 @@ function ModalRenderer({
           <button
             className="modal-close"
             onClick={closeModal}
-            aria-label="Close"
+            aria-label={`Close ${modalConfig.modalId.replace("-", " ")} modal`}
           >
             ✕
           </button>
