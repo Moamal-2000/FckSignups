@@ -327,6 +327,13 @@ h1 .dotnet {
     gap: 0.5rem;
 }
 
+.stats {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .2rem;
+}
+
 .stat-dot {
     width: 6px;
     height: 6px;
