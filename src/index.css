@@ -615,10 +615,6 @@ input[type="text"]::placeholder {
     gap: 0.75rem;
 }
 
-.card-header svg {
-    cursor: help;
-}
-
 .card-title-wrap {
     display: flex;
     flex-direction: row;
