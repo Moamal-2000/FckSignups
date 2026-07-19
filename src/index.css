@@ -447,31 +447,33 @@ input[type="text"]::placeholder {
     font-size: 0.8rem;
     font-weight: 500;
     font-family: var(--font-mono);
-    transition: all 0.15s;
     user-select: none;
     position: relative;
     overflow: hidden;
+    transition: color 0.15s, border-color 0.15s .35s;
+}
+
+.cat-btn:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    transition: color 0.15s, border-color 0.15s;
 }
 
 .cat-btn::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
+    translate: -101% 0;
     width: 100%;
     height: 100%;
     background: var(--accent);
-    transition: left 0.2s;
     z-index: -1;
-}
-
-.cat-btn:hover {
-    color: var(--text);
-    border-color: var(--accent);
+    transition: translate .2s .2s, opacity .2s;
 }
 
 .cat-btn:hover::before {
-    left: 0;
+    translate: 0;
     opacity: 0.1;
 }
 
