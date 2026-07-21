@@ -3,7 +3,7 @@ name: Request to Add a Tool
 about: You found/made a tool and want it added to the website. The tool must be  open-source
   & no-signup & in-browser to be considered.
 title: "[Tool Addition Request] <TOOL_NAME>"
-labels: enhancement
+labels: tool-submission
 assignees: ''
 
 ---
