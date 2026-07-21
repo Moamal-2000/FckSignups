@@ -1,4 +1,5 @@
-# FckSignups
+# NoSignups
+## (formerly FckSignups)
 
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/hbDDqdmcm)
 [![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/fucksignups/)
@@ -10,7 +11,7 @@ A curated collection of open-source tools you can use instantly in your browser.
 
 ## What is this?
 
-FckSignups is a React + TypeScript project. If you want to run it locally, simply clone the repo, install the depedencies, and run the server.
+NoSignups is a React + TypeScript project. If you want to run it locally, simply clone the repo, install the depedencies, and run the server.
 
 Here's a command that would do all the previous steps in one go:
 ```bash
@@ -99,7 +100,7 @@ It's simple. We're at 200+ tools, and a lot of them are similar. To break the ho
 
 ## License
 
-The FckSignups directory code is released under the **GPL-3.0 License**.
+The NoSignups directory code is released under the **GPL-3.0 License**.
 
 Individual tools listed in the directory retain their own licenses. We do not claim ownership of any third-party projects.
 
